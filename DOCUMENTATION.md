@@ -200,7 +200,7 @@ Unless otherwise specified in each example, assume that the following **input pa
 
 ### Fractal Pattern 4: Fractal Tree with offshoots, affected by points of effect
 
-![Fractal Tree affected by repulsion field](images/fractal_tree-example_4.png)
+![Fractal Tree affected by points of effect equally](images/fractal_tree-example_4.png)
 
 - **Parameters**:
   - `attraction_point` = `(-200,350)`
@@ -221,7 +221,7 @@ Unless otherwise specified in each example, assume that the following **input pa
 
 ### Fractal Pattern 5: Fractal Tree with offshoots, affected by points of effect
 
-![Fractal Tree affected by repulsion field](images/fractal_tree-example_3.png)
+![Fractal Tree leaning right affected by points of effect](images/fractal_tree-example_5.png)
 
 - **Parameters**:
   - `attraction_point` = `(-120,200)`
@@ -243,7 +243,7 @@ Unless otherwise specified in each example, assume that the following **input pa
 
 ### Fractal Pattern 6: Fractal Tree with offshoots, affected by points of effect
 
-![Fractal Tree affected by repulsion field](images/fractal_tree-example_3.png)
+![Fractal Tree leaning left affected by points of effect](images/fractal_tree-example_6.png)
 
 - **Parameters**:
   - `attraction_point` = `(120,200)`
