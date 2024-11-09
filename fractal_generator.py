@@ -29,13 +29,13 @@ random.seed(seed_value)
 print("Seed used this iteration:", seed_value)
 
 # Add attraction point and repulsion field (x,y)
-attraction_point = (120,200) # Point for the L-system to biasly grow towards
+attraction_point = (-200,350) # Point for the L-system to biasly grow towards
 repulsion_field_center = (0,120) # Point for the L-system to biasly grow away from
-repulsion_field_radius = 40
+repulsion_field_radius = 75
 
 # Add the probability of the bias (0-0.5 (if one bias is set to 0 the other can be chosen in range 0-1))
-attraction_bias = 0.5
-repulsion_bias = 0.4
+attraction_bias = 0.2
+repulsion_bias = 0.0
 
 # Global list to store all line segments
 line_list = []
@@ -117,7 +117,7 @@ def get_color(depth, max_depth):
 if __name__ == "__main__":
     # Parameters
     start_point = (0, 0)
-    initial_angle = 120
+    initial_angle = 90
     initial_length = 100
     recursion_depth = 0
     max_recursion_depth = 8
@@ -146,14 +146,14 @@ if __name__ == "__main__":
 
     # Optional: Customize the plot
     ax.plot(attraction_point[0],attraction_point[1], 'yo', markersize=5, label = "Attraction point")
-    ax.plot(repulsion_field_center[0],repulsion_field_center[1], 'ko', markersize=5, label = "Repulsion point")
-    ax.set_aspect('equal')
-    repulsion_field = plt.Circle(repulsion_field_center, repulsion_field_radius, color = 'black', alpha = 0.2, linestyle = '--', linewidth = 1, label = "Repulsion Field Area")
-    ax.add_patch(repulsion_field)
+    # ax.plot(repulsion_field_center[0],repulsion_field_center[1], 'ko', markersize=5, label = "Repulsion point")
+    # ax.set_aspect('equal')
+    # repulsion_field = plt.Circle(repulsion_field_center, repulsion_field_radius, color = 'black', alpha = 0.2, linestyle = '--', linewidth = 1, label = "Repulsion Field Area")
+    # ax.add_patch(repulsion_field)
     ax.set_aspect('equal')
     plt.axis('off')
     plt.legend(loc=(0.4,0))
     plt.show()
 
     # Save the figure
-    fig.savefig('images/fractal_tree-example_6.png', dpi=300, bbox_inches='tight')
+    fig.savefig('images/fractal_tree-example_2.png', dpi=300, bbox_inches='tight')
